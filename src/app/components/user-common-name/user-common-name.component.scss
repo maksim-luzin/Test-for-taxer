@@ -1,0 +1,81 @@
+.user-common-name {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: larger;
+  cursor: pointer;
+  border-bottom: 1px solid #222;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  height: 1.9rem;
+
+  &:hover {
+    background-color: #ddd;
+  }
+
+  i {
+    display: none;
+  }
+}
+
+.certificate-selected {
+  background-color: #bbb !important;
+
+  i {
+    display: block;
+  }
+}
+
+@media (max-width: 975px) {
+  .user-common-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 837px) {
+  .user-common-name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 740px) {
+  .user-common-name {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 695px) {
+  .user-common-name {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 416px) {
+  .user-common-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 372px) {
+  .user-common-name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 330px) {
+  .user-common-name {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 305px) {
+  .user-common-name {
+    font-size: 6px;
+  }
+}
+
+@media (max-width: 305px) {
+  .user-common-name {
+    font-size: 4px;
+  }
+}

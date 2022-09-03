@@ -1,0 +1,7 @@
+<li
+  [ngClass]="{'user-common-name': true, 'certificate-selected': isSelectedCertificate(certificate)}"
+  (click) = "selectedCertificate(certificate)"
+>
+  {{getCommonName()}}
+  <i class="material-icons">arrow_right</i>
+</li>
