@@ -1,0 +1,87 @@
+
+.app-layout {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: [start] 9.375% [user-common-name-start] 1fr [user-common-name-end] 9.375% [user-info-start] 1fr [user-info-end] 9.375% [end];
+  grid-template-rows: [start] 4rem [data-start] 14rem [add-certificate-start] 2rem [data-end] 1fr [end];
+}
+
+.user-common-name-list {
+  grid-column-start: user-common-name-start;
+  grid-column-end: user-common-name-end;
+  grid-row-start: data-start;
+  grid-row-end: add-certificate-start;
+  overflow-y: auto;
+  border: 1px solid #444;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.user-info {
+  grid-column-start: user-info-start;
+  grid-column-end: user-info-end;
+  grid-row-start: data-start;
+  grid-row-end: data-end;
+  border: 1px solid #444;
+  font-size: larger;
+  padding: 0.4rem;
+}
+
+.certificate-upload {
+  border-style: dashed;
+}
+
+.add-certificate {
+  grid-column-start: user-common-name-start;
+  grid-column-end: user-common-name-end;
+  grid-row-start: add-certificate-start;
+  grid-row-end: data-end;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items:flex-end ;
+
+  button {
+    font-size: large;
+    font-weight: 400;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    cursor: pointer;
+    width: 10rem;
+  }
+}
+
+@media (max-width: 695px) {
+  .app-layout {
+    grid-template-columns: [start] 9.375% [user-common-name-start] 1fr [user-common-name-end] 9.375% [end];
+    grid-template-rows: [start] 2rem [data-start] 16rem [data-end] 2rem [user-names-start] 16rem [user-names-end] 2rem [add-user-start] 2rem [add-user-end] 1fr [end];
+  }
+
+  .user-info {
+    grid-column-start: user-common-name-start;
+    grid-column-end: user-common-name-end;
+  }
+
+  .user-common-name-list {
+    grid-row-start: user-names-start;
+    grid-row-end: user-names-end;
+  }
+
+  .add-certificate {
+    grid-row-start: add-add-user-start;
+    grid-row-end: add-user-end;
+  }
+}
+
+@media (max-width: 310px) {
+  .user-common-name {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 300px) {
+  .user-common-name {
+    font-size: 8px;
+  }
+}
