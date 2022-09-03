@@ -1,0 +1,11 @@
+<div *ngIf="isSelectedCertificate
+">
+  <p>Common Name: {{getSelectedCertificate().commonName}}</p>
+  <p>Issuer CN: {{getSelectedCertificate().issuerCN}}</p>
+  <p>Valid From: {{getSelectedCertificate().validFrom}}</p>
+  <p>Valid Till: {{getSelectedCertificate().validTill}}</p>
+</div>
+
+<p *ngIf="!isSelectedCertificate" class="not-user-info">
+  Виберіть сертифікат щоб переглянути інформацію
+</p>
