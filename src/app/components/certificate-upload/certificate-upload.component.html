@@ -1,0 +1,9 @@
+<label
+  class="upload"
+  appDropZone
+  (dragover)="setIsCertificateDrop()"
+  (dragleave)="resetIsCertificateDrop()"
+>
+  {{isCertificateDrop ? fileDropInfo: fileDragInfo}}
+  <input type="file" hidden />
+</label>
